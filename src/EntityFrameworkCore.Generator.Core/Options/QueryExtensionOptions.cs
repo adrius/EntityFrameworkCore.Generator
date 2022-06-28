@@ -15,7 +15,7 @@ namespace EntityFrameworkCore.Generator.Options
             : base(variables, AppendPrefix(prefix, "Query"))
         {
             Namespace = "{Project.Namespace}.Data.Queries";
-            Directory = @"{Project.Directory}\Data\Queries";
+            Directory = @"{Project.Directory}{Path.DirectorySeparatorChar}Data{Path.DirectorySeparatorChar}Queries";
 
             Generate = false;
             IndexPrefix = "By";

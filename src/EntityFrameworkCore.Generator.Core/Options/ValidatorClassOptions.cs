@@ -14,7 +14,7 @@
         {
             Generate = false;
             Namespace = "{Project.Namespace}.Domain.Validation";
-            Directory = @"{Project.Directory}\Domain\Validation";
+            Directory = @"{Project.Directory}{Path.DirectorySeparatorChar}Domain{Path.DirectorySeparatorChar}Validation";
 
             BaseClass = "AbstractValidator<{Model.Name}>";
             Name = "{Model.Name}Validator";

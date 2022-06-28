@@ -15,7 +15,7 @@ namespace EntityFrameworkCore.Generator.Options
             : base(variables, AppendPrefix(prefix, "Mapping"))
         {
             Namespace = "{Project.Namespace}.Data.Mapping";
-            Directory = @"{Project.Directory}\Data\Mapping";
+            Directory = @"{Project.Directory}{Path.DirectorySeparatorChar}Data{Path.DirectorySeparatorChar}Mapping";
         }
     }
 }

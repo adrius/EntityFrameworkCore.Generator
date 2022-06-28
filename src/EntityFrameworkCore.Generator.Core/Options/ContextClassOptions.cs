@@ -17,7 +17,7 @@ namespace EntityFrameworkCore.Generator.Options
             : base(variables, AppendPrefix(prefix, "Context"))
         {
             Namespace = "{Project.Namespace}.Data";
-            Directory = @"{Project.Directory}\Data";
+            Directory = @"{Project.Directory}{Path.DirectorySeparatorChar}Data";
 
             Name = "{Database.Name}Context";
             BaseClass = "DbContext";

@@ -14,7 +14,7 @@
         {
             Generate = false;
             Namespace = "{Project.Namespace}.Domain.Mapping";
-            Directory = @"{Project.Directory}\Domain\Mapping";
+            Directory = @"{Project.Directory}{Path.DirectorySeparatorChar}Domain{Path.DirectorySeparatorChar}Mapping";
 
             BaseClass = "AutoMapper.Profile";
             Name = "{Entity.Name}Profile";

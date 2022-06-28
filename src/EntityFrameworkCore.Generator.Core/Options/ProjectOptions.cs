@@ -13,7 +13,7 @@ namespace EntityFrameworkCore.Generator.Options
             : base(variables, AppendPrefix(prefix, "Project"))
         {
             Namespace = "{Database.Name}";
-            Directory = @".\";
+            Directory = @".{Path.DirectorySeparatorChar}";
             Nullable = false;
         }
 

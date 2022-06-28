@@ -16,7 +16,7 @@ namespace EntityFrameworkCore.Generator.Options
             : base(variables, AppendPrefix(prefix, "Entity"))
         {
             Namespace = "{Project.Namespace}.Data.Entities";
-            Directory = @"{Project.Directory}\Data\Entities";
+            Directory = @"{Project.Directory}{Path.DirectorySeparatorChar}Data{Path.DirectorySeparatorChar}Entities";
 
             RelationshipNaming = RelationshipNaming.Plural;
             EntityNaming = EntityNaming.Singular;

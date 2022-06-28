@@ -14,7 +14,7 @@ namespace EntityFrameworkCore.Generator.Options
             : base(variables, prefix)
         {
             Namespace = "{Project.Namespace}";
-            Directory = @"{Project.Directory}\";
+            Directory = @"{Project.Directory}{Path.DirectorySeparatorChar}";
             Document = false;
         }
 

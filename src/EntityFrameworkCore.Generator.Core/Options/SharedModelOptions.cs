@@ -14,7 +14,7 @@
         public SharedModelOptions(VariableDictionary variables, string prefix) : base(variables, prefix)
         {
             Namespace = "{Project.Namespace}.Domain.Models";
-            Directory = @"{Project.Directory}\Domain\Models";
+            Directory = @"{Project.Directory}{Path.DirectorySeparatorChar}Domain{Path.DirectorySeparatorChar}Models";
 
             Include = new SelectionOptions();
             Exclude = new SelectionOptions();
